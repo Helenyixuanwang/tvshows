@@ -1,0 +1,9 @@
+.error-txt {
+	color:red;
+}
+
+.fence {
+	border:1px solid black;
+	padding:10px;
+	margin:20px;
+}
