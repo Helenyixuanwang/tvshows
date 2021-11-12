@@ -40,9 +40,9 @@
 						<td>
 						<c:if  test="${not empty show.ratingsCreatedForShow }">
 						
-						<c:forEach  items="${show.ratingsCreatedForShow }" var="rating">
-						<span><c:out value="${rating.score}" />, </span>
-						</c:forEach> 
+						<!--<c:forEach  items="${show.ratingsCreatedForShow }" var="rating"> -->
+						<span><c:out value="${show.findAve(show.ratingsCreatedForShow)}" /></span>
+						<!--</c:forEach> -->
 						</c:if>
 						</td>
 					

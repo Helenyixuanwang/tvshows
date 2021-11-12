@@ -27,14 +27,5 @@ private TvRatingRepository tvRepo;
 		return tvRepo.findAllByOrderByScore();
 	}
 	
-	public double averageRating(List<TvRating> ratings ) {
-		double sum = 0;
-		double ave = 0;
-		for (TvRating item: ratings) {
-			sum = sum + item.getScore();
-			
-		}
-		ave = sum/ratings.size();
-		return ave;
-	}
+	
 }

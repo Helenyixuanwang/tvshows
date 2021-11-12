@@ -81,6 +81,16 @@ public class Show {
 		this.ratingsCreatedForShow = ratingsCreatedForShow;
 	}
 	
+	public double findAve(List<TvRating> ratings) {
+        double ave = 0;
+        double sum = 0;
+        for (TvRating item: ratings) {
+			sum = sum + item.getScore();
+			
+		}
+		ave = sum/ratings.size();
+		return ave;
+    }
 
 
 	public Long getId() {
